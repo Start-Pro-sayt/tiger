@@ -1,0 +1,115 @@
+
+
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Суматранский тигр</title>
+    <style>
+        /* Основной стиль */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #ffc3a0;
+            padding: 20px;
+            border-bottom: 2px solid #d35400;
+        }
+
+        h1 {
+            color: #d35400;
+            font-size: 3em;
+            margin-top: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ffc3a0;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+                #myImg {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            cursor: pointer; /* Обычный указатель курсора */
+        }
+
+        #myImg:hover {
+            cursor: hand !important; /* Стандартный вид руки при наведении */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Суматранский тигр</h1>
+    </header>
+
+    <!-- Основная секция текста -->
+    <main>
+        <p><strong>Суматранский тигр</strong>(<em>Panthera tigris sumatrae</em>) является одним из девяти известных подвидов тигра.</p>
+        <p>Это самый маленький из ныне живущих подвидов тигра, обитающий исключительно на острове Суматра в Индонезии. Взрослые самцы достигают длины около 2 метров и веса примерно 100—140 кг.</p>
+        <p>Популяция суматранских тигров резко сокращается из-за браконьерства и разрушения среды обитания. Сегодня этот вид находится под угрозой исчезновения, и по оценкам ученых, осталось менее 400 особей в дикой природе.</p>
+
+                <img id="myImg" src="summ.jpg"alt="Суматранский тигр" >
+        <audio id="mySound" src="summmm.mp3"></audio>
+<script>
+let playing = false;
+
+document.getElementById("myImg").onclick = function() {
+    const sound = document.getElementById("mySound");
+
+    if (!playing) {
+        sound.play();  // Включаем звук
+        playing = true;
+    } else {
+        sound.pause(); // Остановка звука
+        playing = false;
+    }
+};
+</script>
+       <p align=right><a href="osn.html">назад</a></p>
+
+    </main>
+
+    <footer>
+        © 2025 | Сделано с любовью к природе
+    </footer>
+
+</body>
+</html>

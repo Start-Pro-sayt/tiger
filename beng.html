@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бенгальский Тигр</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #ffc3a0;
+            color: white;
+            padding: 1em 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 2em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 1em;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1em;
+        }
+                #myImg {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            cursor: pointer; /* Обычный указатель курсора */
+        }
+
+        #myImg:hover {
+            cursor: hand !important; /* Стандартный вид руки при наведении */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Заголовок -->
+    <header>
+        <h1>Бенгальский Тигр</h1>
+    </header>
+
+    <!-- Основная секция -->
+    <main>
+        <p>Бенгальский тигр (Panthera tigris tigris) является одним из подвидов тигра, обитающим преимущественно в Индии, Непале, Бутане и Бангладеш.</p>
+          <img id="myImg" src="bel.jpg" alt="Фотография бенгальского тигра">
+        <audio id="mySound" src="belric.mp3"></audio>
+<script>
+let playing = false;
+
+document.getElementById("myImg").onclick = function() {
+    const sound = document.getElementById("mySound");
+
+    if (!playing) {
+        sound.play();  // Включаем звук
+        playing = true;
+    } else {
+        sound.pause(); // Остановка звука
+        playing = false;
+    }
+};
+</script>
+        <p>Эти животные известны своей мощью, грациозностью и характерной полосатой окраской шерсти белого или слабо оранжевого цвета с черными полосками.</p>
+                <p align=right><a href="osn.html">назад</p>
+    </main>
+
+</body>
+</html>

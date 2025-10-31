@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основные виды тигров</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Стиль заголовка */
+        header {
+            background-color: #ffc3a0;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0;
+        }
+
+        /* Карточки видов тигров */
+        .species {
+            background-color: #F0E68C;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .species:hover {
+            transform: scale(1.02);
+        }
+
+        /* Заголовки видов */
+        .species h2 {
+            font-size: 1.8em;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+
+        /* Описание видов */
+        .species p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Нижний колонтитул */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #777;
+        }
+        /* Убираем подчёркивание ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Если хотите добавить эффект перехода при наведении */
+a:hover {
+    text-decoration:  none; /* По желанию можно вернуть подчёркивание при наведении */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Основные виды <a href="index.html">тигров</a></h1>
+    </header>
+
+    <main>
+        <a href="am.html"><section class="species">
+            <h2>Амурский тигр</h2>
+            <p>Самый северный вид тигра, обитающий преимущественно в дальневосточной части России.</p>
+        </section></a>
+
+       <a href="beng.html"> <section class="species">
+            <h2>Бенгальский тигр</h2>
+            <p>Распространённый в Индии, Бангладеш и Непале. Самый многочисленный среди всех видов.</p>
+        </section></a>
+
+       <a href="ind.html"> <section class="species">
+            <h2>Индокитайский тигр</h2>
+            <p>Встречается в Юго-Восточной Азии, отличается меньшими размерами и тёмной окраской.</p>
+        </section><a/>
+
+        <a href="sum.html"><section class="species">
+            <h2>Суматранский тигр</h2>
+            <p>Редкий вид, обитающий исключительно на острове Суматра.</p>
+        </section><a/>
+    </main>
+
+    <footer>
+        Источник: Энциклопедия млекопитающих
+    </footer>
+</body>
+</html>

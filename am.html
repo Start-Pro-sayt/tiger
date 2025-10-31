@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Амурский тигр</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Меняем основной шрифт на Georgia */
+            background-color: #EAF0F1; /* Светлый голубой фон */
+            color: #333; /* Темно-серый цвет основного текста */
+            line-height: 1.6; /* Улучшаем читаемость за счёт межстрочного интервала */
+            margin: 0 auto; /* Страничка автоматически центруется горизонтально */
+            max-width: 800px; /* Ограничиваем максимальную ширину страницы */
+            padding: 20px; /* Добавляем внутреннее пространство вокруг контента */
+        }
+
+        header {
+            background-color: #FFD700; /* Яркий золотисто-жёлтый фон шапки */
+            padding: 1rem; /* Пространство внутри шапки */
+            border-radius: 10px; /* Скругленные углы шапки */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Тень для эффекта объёма */
+        }
+
+        h1 {
+            text-align: center; /* По центру заголовок */
+            color: #fff; /* Белый цвет текста заголовка */
+            font-size: 2.5rem; /* Увеличенный размер шрифта */
+            margin-bottom: 0; /* Убираем нижний отступ */
+        }
+
+        .content {
+            background-color: white; /* Белое поле для основного контента */
+            padding: 20px; /* Отступы вокруг контента */
+            border-radius: 10px; /* Закругленные углы поля */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Легкая тень для объема */
+        }
+
+        p {
+            font-size: 1.1rem; /* Немного увеличенный размер абзаца */
+            line-height: 1.6; /* Интервал между строками для удобства чтения */
+        }
+
+        strong {
+            color: #CC0000; /* Красное выделение важного текста */
+        }
+
+        em {
+            color: #0066cc; /* Синяя подсветка эмфатического текста */
+        }
+
+        a {
+            color: #007BFF; /* Голубые гиперссылки */
+            text-decoration: none; /* Без подчеркивания ссылок */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Подчеркнутые ссылки при наведении */
+        }
+
+        footer {
+            text-align: center; /* Центрированный футер */
+            margin-top: 20px; /* Верхний отступ */
+            font-style: italic; /* Курсивный стиль для футера */
+            color: #666; /* Серый цвет футера */
+        }
+        #myImg {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            cursor: pointer; /* Обычный указатель курсора */
+        }
+
+        #myImg:hover {
+            cursor: hand !important; /* Стандартный вид руки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Амурский тигр</h1>
+    </header>
+    <div class="content">
+        <img id="myImg" src="amyr.jpg" alt="Фотография амурского тигра" style="display:block;margin:0 auto;width:80%;height:auto;">
+        <audio id="mySound" src="ric.mp3"></audio>
+<script>
+let playing = false;
+
+document.getElementById("myImg").onclick = function() {
+    const sound = document.getElementById("mySound");
+
+    if (!playing) {
+        sound.play();  // Включаем звук
+        playing = true;
+    } else {
+        sound.pause(); // Остановка звука
+        playing = false;
+    }
+};
+</script>
+
+        <p><strong>Амурский тигр</strong> (уссурийский или сибирский тигр) — крупнейший представитель семейства кошачьих.</p>
+        <p>Они живут в основном в дальневосточных регионах России, включая Приморье и Хабаровск. Эти звери выделяются большими размерами и густым мехом, помогающим выживать в холодных условиях.</p>
+        <p>Сейчас насчитывается примерно <em>500 особей</em>. Вид подвержен угрозе уничтожения из-за незаконной охоты и потери мест обитания.</p>
+        <p align=right><a href="osn.html">назад</a></p>
+    </div>
+    <footer>
+        © 2025. Все права защищены.
+    </footer>
+</body>
+</html>
